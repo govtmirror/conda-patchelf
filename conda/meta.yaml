@@ -1,0 +1,22 @@
+package:
+  name: patchelf
+  version: 0.9
+
+source:
+  git_url: https://github.com/NixOS/patchelf.git
+  git_tag: 0.9
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - automake
+
+test:
+  commands:
+    - patchelf --help
+
+about:
+  home: http://nixos.org/patchelf.html
+  license: GPL 3
