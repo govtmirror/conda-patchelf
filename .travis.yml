@@ -40,6 +40,8 @@ install:
 # Prep to build for upload to binstar
 - conda install anaconda-client anaconda-build
 - conda config --add channels jlaura
+# Add A. Meurer's channel to get automake on linux
+- conda config --add channels asmeurer 
 
 # Straight from the menpo team
 - if [["$TRAVIS_OS_NAME" == "osx"]]; then
